@@ -1,0 +1,137 @@
+﻿@model PatientDashBoard.ViewModel.PatientDashboardViewModel
+
+@{
+    ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_Layout-prototype.cshtml";
+}
+
+<nav class="nhsuk-breadcrumb app-breadcrumb" aria-label="Breadcrumb">
+    <div class="nhsuk-width-container">
+        <ol class="nhsuk-breadcrumb__list">
+            <li class="nhsuk-breadcrumb__item">@Html.ActionLink("Home", "Index", "Home") </li>
+            <li class="nhsuk-breadcrumb__item">Patient search</li>
+        </ol>
+    </div>
+</nav>
+
+<div class="nhsuk-width-container ">
+    <main class="nhsuk-main-wrapper " id="maincontent" role="main">
+        <div class="nhsuk-grid-row">
+            <div class="nhsuk-grid-column-two-thirds">
+                <div class="row">
+                    <div class="col-md-12">
+                        @if (ViewBag.hasError == true)
+                        {
+                            <div class="nhsuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabindex="-1">
+                                <h2 class="nhsuk-error-summary__title" id="error-summary-title">
+                                    There is a problem
+                                </h2>
+                                <div class="nhsuk-error-summary__body">
+                                    <p>
+                                        Invalid NHS number
+                                    </p>
+                                    <ul class="nhsuk-list nhsuk-error-summary__list">
+                                        <li>
+                                            <a href="#example-error-1">Please enter NHS Number</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        }
+                        @using (Html.BeginForm("Index", "Patient", FormMethod.Post))
+                        {
+                            <div class="nhsuk-form-group col-md-6" id="question_nhsnumber">
+                                <label for="NhsNumber" class="nhsuk-label">Search patient with NHS number</label>
+                                @Html.TextBoxFor(m => m.SearchQuery, new { @id = "SearchQuery", @class = "nhsuk-input nhsuk-input--width-20 nhsuk-input" })
+                            </div>
+                            @Html.ActionLink("Clear", "Index", "Patient", new { @class = "nhsuk-button nhsuk-button--secondary col-md-3" })
+                            <button id="submit-button" data-prevent-double-click="true" type="submit" class="nhsuk-button col-md-3">Search</button>
+                        }
+
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+
+
+                        @if (Model != null)
+                        {
+                            if (Model.PatientViewModel.Any())
+                            {
+                                <h2>Patients  (@Model.PatientViewModel.Count()) records found</h2>
+
+
+                                <table role="table" class="nhsuk-table-responsive">
+
+                                    <thead role="rowgroup" class="nhsuk-table__head">
+                                        <tr role="row">
+                                            <th role="columnheader" scope="col">
+                                                NHS Number
+                                            </th>
+                                            <th role="columnheader" scope="col">
+                                                Name
+                                            </th>
+                                            <th role="columnheader" scope="col">
+                                                Dob
+                                            </th>
+                                            <th role="columnheader" scope="col">
+                                                Email
+                                            </th>
+                                            <th role="columnheader" scope="col">
+                                                
+                                            </th>
+                                        </tr>
+                                    </thead>
+
+                                    @foreach (var item in Model.PatientViewModel)
+                                    {
+                                        <tr role="row" class="nhsuk-table__row">
+                                            <td role="cell" class="nhsuk-table__cell">
+                                                <span class="nhsuk-table-responsive__heading">  @Html.DisplayFor(modelItem => item.NhsNumber)  </span>
+                                            </td>
+                                            <td role="cell" class="nhsuk-table__cell">
+                                                <span class="nhsuk-table-responsive__heading">  @Html.DisplayFor(modelItem => item.LastName) @Html.DisplayFor(modelItem => item.FirstName) </span>
+                                            </td>
+                                            <td role="cell" class="nhsuk-table__cell">
+                                                <span class="nhsuk-table-responsive__heading">
+                                                    @item.Dob.ToString("d")
+                                                </span>
+                                            </td>
+                                            <td role="cell" class="nhsuk-table__cell">
+                                                <span class="nhsuk-table-responsive__heading">  @Html.DisplayFor(modelItem => item.Email) </span>
+                                            </td>
+
+                                            <td role="cell" class="nhsuk-table__cell">
+                                                @Html.ActionLink("Details", "Details", new { id = item.PatientId }, new { @class = "btn btn-primary" })
+                                            </td>
+
+                                        </tr>
+
+                                    }
+
+                                </table>
+                            }
+                            else if (ViewBag.hasError == false)
+                            {
+                                <div class="nhsuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabindex="-1">
+                                    <h2 class="nhsuk-error-summary__title" id="error-summary-title">
+                                        No records found
+                                    </h2>
+                                    <div class="nhsuk-error-summary__body">
+                                        <p>
+                                            please check your entry and try again.
+                                        </p>
+                                    </div>
+                                </div>
+                            }
+                        }
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+</div>

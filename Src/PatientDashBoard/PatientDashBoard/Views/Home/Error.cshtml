@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_Layout-prototype.cshtml";
+
+}
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Something went wrong...</h2>
+        <div class="nhsuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabindex="-1">
+            <h2 class="nhsuk-error-summary__title" id="error-summary-title">
+                There is a problem with our system at this moment.
+            </h2>
+            <div class="nhsuk-error-summary__body">
+                <p>
+                    Please try again after some time. 
+                </p>
+
+                @Html.ActionLink("Go to home", "Index", "Home")
+            </div>
+        </div>
+
+    </div>
+
+</div>

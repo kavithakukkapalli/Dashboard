@@ -1,0 +1,12 @@
+C:\Users\nband\source\repos\PatientDashBoard\Src\PatientDashBoard\PatientDashBoard.ViewModel\bin\Debug\PatientDashBoard.ViewModel.dll
+C:\Users\nband\source\repos\PatientDashBoard\Src\PatientDashBoard\PatientDashBoard.ViewModel\bin\Debug\PatientDashBoard.ViewModel.pdb
+C:\Users\nband\source\repos\PatientDashBoard\Src\PatientDashBoard\PatientDashBoard.ViewModel\obj\Debug\PatientDashBoard.ViewModel.csproj.AssemblyReference.cache
+C:\Users\nband\source\repos\PatientDashBoard\Src\PatientDashBoard\PatientDashBoard.ViewModel\obj\Debug\PatientDashBoard.ViewModel.csproj.CoreCompileInputs.cache
+C:\Users\nband\source\repos\PatientDashBoard\Src\PatientDashBoard\PatientDashBoard.ViewModel\obj\Debug\PatientDashBoard.ViewModel.dll
+C:\Users\nband\source\repos\PatientDashBoard\Src\PatientDashBoard\PatientDashBoard.ViewModel\obj\Debug\PatientDashBoard.ViewModel.pdb
+C:\Users\Nag\Downloads\PatientDashboard\Src\PatientDashBoard\PatientDashBoard.ViewModel\bin\Debug\PatientDashBoard.ViewModel.dll
+C:\Users\Nag\Downloads\PatientDashboard\Src\PatientDashBoard\PatientDashBoard.ViewModel\bin\Debug\PatientDashBoard.ViewModel.pdb
+C:\Users\Nag\Downloads\PatientDashboard\Src\PatientDashBoard\PatientDashBoard.ViewModel\obj\Debug\PatientDashBoard.ViewModel.csprojAssemblyReference.cache
+C:\Users\Nag\Downloads\PatientDashboard\Src\PatientDashBoard\PatientDashBoard.ViewModel\obj\Debug\PatientDashBoard.ViewModel.csproj.CoreCompileInputs.cache
+C:\Users\Nag\Downloads\PatientDashboard\Src\PatientDashBoard\PatientDashBoard.ViewModel\obj\Debug\PatientDashBoard.ViewModel.dll
+C:\Users\Nag\Downloads\PatientDashboard\Src\PatientDashBoard\PatientDashBoard.ViewModel\obj\Debug\PatientDashBoard.ViewModel.pdb
