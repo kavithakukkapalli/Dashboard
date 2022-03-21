@@ -1,0 +1,110 @@
+﻿
+@model PatientDashBoard.ViewModel.PatientSummaryViewModel
+@{
+    ViewBag.Title = "About";
+    Layout = "~/Views/Shared/_Layout-prototype.cshtml";
+}
+
+<nav class="nhsuk-breadcrumb app-breadcrumb" aria-label="Breadcrumb">
+    <div class="nhsuk-width-container">
+        <ol class="nhsuk-breadcrumb__list">
+            <li class="nhsuk-breadcrumb__item">@Html.ActionLink("Home", "Index", "Home") </li>
+            <li class="nhsuk-breadcrumb__item">Patient summary</li>
+        </ol>
+        <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/design-system/components">Back to Components</a></p>
+    </div>
+</nav>
+
+<div class="nhsuk-width-container ">
+    <main class="nhsuk-main-wrapper " id="maincontent" role="main">
+        <div class="nhsuk-grid-row">
+            <div class="nhsuk-grid-column-two-thirds">
+                <div class="container"><h1>Patient Summary  </h1></div>
+                <div class="nhsuk-grid-row">
+                    <div class="col-md-12">
+                        <dl class="nhsuk-summary-list">
+
+                            <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                                Name
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                                @Html.DisplayFor(model => model.Patient.FirstName)  @Html.DisplayFor(model => model.Patient.LastName)
+                            </dd>
+
+                            <dd class="nhsuk-summary-list__actions">
+
+                                <a href="#">
+                                    Change<span class="nhsuk-u-visually-hidden"> name</span>
+                                </a>
+
+                            </dd>
+
+                    </div>
+
+                    <div class="nhsuk-summary-list__row">
+                        <dt class="nhsuk-summary-list__key">
+                            Date of birth
+                        </dt>
+                        <dd class="nhsuk-summary-list__value">
+                            @Model.Patient.Dob.ToString("d")
+                        </dd>
+
+                        <dd class="nhsuk-summary-list__actions">
+
+                            <a href="#">
+                                Change<span class="nhsuk-u-visually-hidden"> date of birth</span>
+                            </a>
+
+                        </dd>
+
+                    </div>
+
+                    <div class="nhsuk-summary-list__row">
+                        <dt class="nhsuk-summary-list__key">
+                            Address
+                        </dt>
+                        <dd class="nhsuk-summary-list__value">
+                            <p>   @Html.DisplayFor(model => model.Address.AddressLine1)</p>
+                            <p>   @Html.DisplayFor(model => model.Address.AddressLine2)</p>
+                            <p>   @Html.DisplayFor(model => model.Address.City)</p>
+                            <p>   @Html.DisplayFor(model => model.Address.County)</p>
+                            <p>   @Html.DisplayFor(model => model.Address.PostCode)</p>
+                        </dd>
+
+                        <dd class="nhsuk-summary-list__actions">
+
+                            <a href="#">
+                                Change<span class="nhsuk-u-visually-hidden"> contact information</span>
+                            </a>
+
+                        </dd>
+
+                    </div>
+
+                    <div class="nhsuk-summary-list__row">
+                        <dt class="nhsuk-summary-list__key">
+                            Contact details
+                        </dt>
+                        <dd class="nhsuk-summary-list__value">
+                            @Html.DisplayFor(model => model.Patient.PhoneNumber)
+                            @Html.DisplayFor(model => model.Patient.Email)
+                        </dd>
+
+                        <dd class="nhsuk-summary-list__actions">
+
+                            <a href="#">
+                                Change<span class="nhsuk-u-visually-hidden"> contact details</span>
+                            </a>
+
+                        </dd>
+
+                    </div>
+
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+    </main>
+</div>
