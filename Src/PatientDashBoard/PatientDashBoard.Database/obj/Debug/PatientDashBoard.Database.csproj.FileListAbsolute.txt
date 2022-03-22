@@ -31,7 +31,6 @@ C:\Users\Nag\Downloads\PatientDashboard\Src\PatientDashBoard\PatientDashBoard.Da
 C:\Users\Nag\Downloads\PatientDashboard\Src\PatientDashBoard\PatientDashBoard.Database\bin\Debug\PatientDashBoard.Models.pdb
 C:\Users\Nag\Downloads\PatientDashboard\Src\PatientDashBoard\PatientDashBoard.Database\bin\Debug\EntityFramework.xml
 C:\Users\Nag\Downloads\PatientDashboard\Src\PatientDashBoard\PatientDashBoard.Database\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Nag\Downloads\PatientDashboard\Src\PatientDashBoard\PatientDashBoard.Database\obj\Debug\PatientDashBoard.Database.csprojAssemblyReference.cache
 C:\Users\Nag\Downloads\PatientDashboard\Src\PatientDashBoard\PatientDashBoard.Database\obj\Debug\PatientDashBoard.Database.Migrations.initialdbsetup.resources
 C:\Users\Nag\Downloads\PatientDashboard\Src\PatientDashBoard\PatientDashBoard.Database\obj\Debug\PatientDashBoard.Database.Migrations.addednhsnumber.resources
 C:\Users\Nag\Downloads\PatientDashboard\Src\PatientDashBoard\PatientDashBoard.Database\obj\Debug\PatientDashBoard.Database.csproj.GenerateResource.cache
@@ -39,3 +38,4 @@ C:\Users\Nag\Downloads\PatientDashboard\Src\PatientDashBoard\PatientDashBoard.Da
 C:\Users\Nag\Downloads\PatientDashboard\Src\PatientDashBoard\PatientDashBoard.Database\obj\Debug\PatientDashBoard.Database.csproj.CopyComplete
 C:\Users\Nag\Downloads\PatientDashboard\Src\PatientDashBoard\PatientDashBoard.Database\obj\Debug\PatientDashBoard.Database.dll
 C:\Users\Nag\Downloads\PatientDashboard\Src\PatientDashBoard\PatientDashBoard.Database\obj\Debug\PatientDashBoard.Database.pdb
+C:\Users\Nag\Downloads\PatientDashboard\Src\PatientDashBoard\PatientDashBoard.Database\obj\Debug\PatientDashBoard.Database.csprojAssemblyReference.cache

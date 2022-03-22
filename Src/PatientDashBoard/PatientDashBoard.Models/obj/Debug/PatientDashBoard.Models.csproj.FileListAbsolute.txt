@@ -3,3 +3,8 @@ C:\Users\nband\source\repos\PatientDashBoard\Src\PatientDashBoard\PatientDashBoa
 C:\Users\nband\source\repos\PatientDashBoard\Src\PatientDashBoard\PatientDashBoard.Models\obj\Debug\PatientDashBoard.Models.csproj.CoreCompileInputs.cache
 C:\Users\nband\source\repos\PatientDashBoard\Src\PatientDashBoard\PatientDashBoard.Models\obj\Debug\PatientDashBoard.Models.dll
 C:\Users\nband\source\repos\PatientDashBoard\Src\PatientDashBoard\PatientDashBoard.Models\obj\Debug\PatientDashBoard.Models.pdb
+C:\Users\Nag\Downloads\PatientDashboard\Src\PatientDashBoard\PatientDashBoard.Models\bin\Debug\PatientDashBoard.Models.dll
+C:\Users\Nag\Downloads\PatientDashboard\Src\PatientDashBoard\PatientDashBoard.Models\bin\Debug\PatientDashBoard.Models.pdb
+C:\Users\Nag\Downloads\PatientDashboard\Src\PatientDashBoard\PatientDashBoard.Models\obj\Debug\PatientDashBoard.Models.csproj.CoreCompileInputs.cache
+C:\Users\Nag\Downloads\PatientDashboard\Src\PatientDashBoard\PatientDashBoard.Models\obj\Debug\PatientDashBoard.Models.dll
+C:\Users\Nag\Downloads\PatientDashboard\Src\PatientDashBoard\PatientDashBoard.Models\obj\Debug\PatientDashBoard.Models.pdb
